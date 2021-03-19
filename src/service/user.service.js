@@ -20,20 +20,9 @@ export default class UserService{
         return users;       
 
     }
-
-    static async create(data){
-        return await axios.post(`${baseUrl}/users`, data);
-    }
+     
 
     static async detail(id){
         return await axios.get(`${baseUrl}/users/${id}`);
-    }
-
-    static async update(id, data){
-        return await axios.put(`${baseUrl}/users/${id}`, data);
-    }
-    
-    static async delete(id){
-        return await axios.delete(`${baseUrl}/users/${id}`);
     }
 }

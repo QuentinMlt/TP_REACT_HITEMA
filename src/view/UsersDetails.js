@@ -28,7 +28,9 @@ export default class UserDetails extends Component{
         return <div className="container">
             <h1>Utilisateur - {user && user.name}</h1>
             <h2>Pseudo : {user.username}</h2>
-            <h2>Email : {user.email}</h2>
+            <h3>Email : {user.email}</h3> 
+            <h4>Nb. Tâche En cours : {user.nb}</h4>
+            <h4>Nb. Tâche Terminées : {user.nb}</h4>
             <button className="btn btn-danger" onClick={() => this.handleDelete()}>Supprimer</button>
         </div>
     }
