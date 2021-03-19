@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import { Link } from 'react-router-dom';
 import UserService from '../service/user.service';
+// cette page apparait dans la liste des utilisateurs en cliquant sur l'utilisateur en question
 
 export default class UserDetails extends Component{
 
