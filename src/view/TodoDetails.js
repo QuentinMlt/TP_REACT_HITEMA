@@ -35,7 +35,6 @@ export default class TodoDetails extends Component{
         }
         return <div className="container">
             <h1>Nom de la tâche - {todo && todo.title}</h1>
-            <h2>En charge : {todo.user.name}</h2>
             <p>Statut : {todo.completed}</p>
             <Link to={`/todos/${todo.id}/modifier`} className="btn btn-success me-2">Modifier l'annonce</Link>
             <button className="btn btn-danger" onClick={() => this.handleDelete()}>Supprimer</button>

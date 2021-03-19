@@ -7,6 +7,9 @@ import TodoList from './view/TodoList';
 import Home from './Home';
 import TodoAdd from './view/TodoAdd';
 import TodoDetails from './view/TodoDetails';
+import TodoModify from './view/TodoModify';
+import UsersList from './view/UsersList';
+import UserDetails from './view/UsersDetails';
 /**Import les classes BrowserRouter, Route de react-router-dom */
 
 
@@ -23,6 +26,10 @@ export default class App extends Component{
         <Route exact path="/todos" component={TodoList} />
         <Route exact path="/todos/ajouter" component={TodoAdd} />
         <Route exact path="/todos/:id" component={TodoDetails} />
+        <Route exact path="/todos/:id/modifier" component={TodoModify} />
+
+        <Route exact path="/utilisateurs" component={UsersList} />
+        <Route exact path="/utilisateurs/:id" component={UserDetails} />
       </Switch>
     <Footer />
 
